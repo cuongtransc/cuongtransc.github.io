@@ -14,12 +14,12 @@
     <link rel="alternate" type="application/rss+xml" title="RSS" href="http://tranhuucuong91.github.io/index.xml">
 
     
-    <title>Stratovarius - Forever - The silence of winter</title>
-    <meta property='og:title' content="Stratovarius - Forever - The silence of winter">
+    <title>Vagrant Cheatsheet - The silence of winter</title>
+    <meta property='og:title' content="Vagrant Cheatsheet - The silence of winter">
     <meta property="og:type" content="article">
     
 
-    <meta property="og:url" content="http://tranhuucuong91.github.io/post/stratovarius-forever/">
+    <meta property="og:url" content="http://tranhuucuong91.github.io/post/vagrant-cheatsheet/">
     
     
 
@@ -32,15 +32,15 @@
       "@type":"WebPage",
       "@id":"http:\/\/tranhuucuong91.github.io\/"
     },
-    "headline": "Stratovarius - Forever |  ",
+    "headline": "Vagrant Cheatsheet |  ",
     "image": {
       "@type": "ImageObject",
       "url": "",
       "height": 700,
       "width": 700
     },
-    "datePublished": "2016-06-11T03:44:48JST",
-    "dateModified": "2016-06-11T03:44:48JST",
+    "datePublished": "2016-06-12T01:49:40JST",
+    "dateModified": "2016-06-12T01:49:40JST",
     "author": {
       "@type": "Person",
       "name": "",
@@ -79,23 +79,46 @@
       <article class="single">
         <div class="image" style="background-image: url(http://tranhuucuong91.github.io/images/default.jpg);"></div>
         <div class="body">
-          <h1>Stratovarius - Forever</h1>
-          <p>I stand alone in the darkness, <br/>
-the winter of my life came so fast. <br/>
-Memories go back to my childhood <br/>
-to days I still recall. <br/></p>
+          <h1>Vagrant Cheatsheet</h1>
+          
 
-<p>Oh how happy I was then, <br/>
-there was no sorrow there was no pain. <br/>
-Walking through the green fields, <br/>
-sunshine in my eyes. <br/></p>
+<p><strong>Source:</strong> <a href="https://gist.github.com/wpscholar/a49594e2e2b918f4d0c4">https://gist.github.com/wpscholar/a49594e2e2b918f4d0c4</a></p>
 
-<p>I&rsquo;m still there everywhere, <br/>
-I&rsquo;m the dust in the wind. <br/>
-I&rsquo;m the star in the northern sky. <br/>
-I never stayed anywhere, <br/>
-I&rsquo;m the wind in the trees. <br/>
-Would you wait for me forever? <br/></p>
+<p>Typing <code>vagrant</code> from the command line will display a list of all available commands.</p>
+
+<p>Be sure that you are in the same directory as the Vagrantfile when running these commands!</p>
+
+<h1 id="common-vagrant-commands:645d5c8f9a98e94b8a928bb0739779a6">Common Vagrant Commands</h1>
+
+<ul>
+<li><code>vagrant up</code>          &ndash; starts vagrant environment (also provisions only on the FIRST <code>vagrant up</code>)</li>
+<li><code>vagrant status</code>      &ndash; outputs status of the vagrant machine</li>
+<li><code>vagrant halt</code>        &ndash; stops the vagrant machine</li>
+<li><code>vagrant reload</code>      &ndash; restarts vagrant machine, loads new Vagrantfile configuration</li>
+<li><code>vagrant provision</code>   &ndash; forces reprovisioning of the vagrant machine</li>
+<li><code>vagrant ssh</code>         &ndash; connects to machine via SSH</li>
+<li><code>vagrant destroy</code>     &ndash; stops and deletes all traces of the vagrant machine</li>
+</ul>
+
+<h1 id="tips:645d5c8f9a98e94b8a928bb0739779a6">Tips</h1>
+
+<ul>
+<li><code>vagrant -v</code>                    &ndash; Get the vagrant version</li>
+<li><code>vagrant global-status</code>         &ndash; outputs status of all vagrant machines</li>
+<li><code>vagrant global-status --prune</code> &ndash; same as above, but prunes invalid entries</li>
+<li><code>vagrant suspend</code>               &ndash; Suspends a virtual machine (remembers state)</li>
+<li><code>vagrant resume</code>                &ndash; Resume a suspended machine (vagrant up works just fine for this as well)</li>
+<li><code>vagrant reload --provision</code>    &ndash; Restart the virtual machine and force provisioning</li>
+<li><code>vagrant provision --debug</code>     &ndash; Use the debug flag to increase the verbosity of the output</li>
+<li><code>vagrant push</code>                  &ndash; Yes, vagrant can be configured to <a href="http://docs.vagrantup.com/v2/push/index.html">deploy code</a>!</li>
+<li><code>vagrant up --provision | tee provision.log</code>  &ndash; Runs <code>vagrant up</code>, forces provisioning and logs all output to a file</li>
+</ul>
+
+<h1 id="notes:645d5c8f9a98e94b8a928bb0739779a6">Notes</h1>
+
+<ul>
+<li>If you are using <a href="https://github.com/varying-vagrant-vagrants/vvv/">VVV</a>, you can enable xdebug by running <code>vagrant ssh</code> and then <code>xdebug_on</code> from the virtual machine&rsquo;s CLI.</li>
+</ul>
 
         </div>
 
@@ -103,10 +126,10 @@ Would you wait for me forever? <br/></p>
           <section>
             <div>
               <div class="p-share">
-                <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2ftranhuucuong91.github.io%2fpost%2fstratovarius-forever%2f&t=Stratovarius%20-%20Forever" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
-                <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2ftranhuucuong91.github.io%2fpost%2fstratovarius-forever%2f&text=Stratovarius%20-%20Forever&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
-                <a href="https://plus.google.com/share?url=http%3a%2f%2ftranhuucuong91.github.io%2fpost%2fstratovarius-forever%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
-                <a href="http://getpocket.com/edit?url=http%3a%2f%2ftranhuucuong91.github.io%2fpost%2fstratovarius-forever%2f&title=Stratovarius%20-%20Forever" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+                <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2ftranhuucuong91.github.io%2fpost%2fvagrant-cheatsheet%2f&t=Vagrant%20Cheatsheet" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+                <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2ftranhuucuong91.github.io%2fpost%2fvagrant-cheatsheet%2f&text=Vagrant%20Cheatsheet&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+                <a href="https://plus.google.com/share?url=http%3a%2f%2ftranhuucuong91.github.io%2fpost%2fvagrant-cheatsheet%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+                <a href="http://getpocket.com/edit?url=http%3a%2f%2ftranhuucuong91.github.io%2fpost%2fvagrant-cheatsheet%2f&title=Vagrant%20Cheatsheet" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
               </div>
             </div>
           </section>
@@ -141,7 +164,13 @@ Would you wait for me forever? <br/></p>
   
   <section>
     <header>Table Of Contents</header>
-    <div></div>
+    <div><nav id="TableOfContents">
+<ul>
+<li><a href="#common-vagrant-commands:645d5c8f9a98e94b8a928bb0739779a6">Common Vagrant Commands</a></li>
+<li><a href="#tips:645d5c8f9a98e94b8a928bb0739779a6">Tips</a></li>
+<li><a href="#notes:645d5c8f9a98e94b8a928bb0739779a6">Notes</a></li>
+</ul>
+</nav></div>
   </section>
   
 

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>The silence of winter </title>
-    <link>http://tranhuucuong91.github.io/post/</link>
+    <link>http://tranhuucuong91.github.io/tags/vagrant/</link>
     <language>en-us</language>
     <author>Cuong Tran</author>
     <rights>(C) 2016</rights>
@@ -55,33 +55,6 @@
 &lt;ul&gt;
 &lt;li&gt;If you are using &lt;a href=&#34;https://github.com/varying-vagrant-vagrants/vvv/&#34;&gt;VVV&lt;/a&gt;, you can enable xdebug by running &lt;code&gt;vagrant ssh&lt;/code&gt; and then &lt;code&gt;xdebug_on&lt;/code&gt; from the virtual machine&amp;rsquo;s CLI.&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-        </item>
-      
-    
-      
-        <item>
-          <title>Stratovarius - Forever</title>
-          <link>http://tranhuucuong91.github.io/post/stratovarius-forever/</link>
-          <pubDate>Sat, 11 Jun 2016 03:44:48 ICT</pubDate>
-          <author>Cuong Tran</author>
-          <guid>http://tranhuucuong91.github.io/post/stratovarius-forever/</guid>
-          <description>&lt;p&gt;I stand alone in the darkness, &lt;br/&gt;
-the winter of my life came so fast. &lt;br/&gt;
-Memories go back to my childhood &lt;br/&gt;
-to days I still recall. &lt;br/&gt;&lt;/p&gt;
-
-&lt;p&gt;Oh how happy I was then, &lt;br/&gt;
-there was no sorrow there was no pain. &lt;br/&gt;
-Walking through the green fields, &lt;br/&gt;
-sunshine in my eyes. &lt;br/&gt;&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m still there everywhere, &lt;br/&gt;
-I&amp;rsquo;m the dust in the wind. &lt;br/&gt;
-I&amp;rsquo;m the star in the northern sky. &lt;br/&gt;
-I never stayed anywhere, &lt;br/&gt;
-I&amp;rsquo;m the wind in the trees. &lt;br/&gt;
-Would you wait for me forever? &lt;br/&gt;&lt;/p&gt;
 </description>
         </item>
       

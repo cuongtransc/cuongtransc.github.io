@@ -6,8 +6,58 @@
     <language>en-us</language>
     <author>Cuong Tran</author>
     <rights>(C) 2016</rights>
-    <updated>2016-06-11 03:44:48 &#43;0700 ICT</updated>
+    <updated>2016-06-12 01:49:40 &#43;0700 ICT</updated>
 
+    
+      
+        <item>
+          <title>Vagrant Cheatsheet</title>
+          <link>http://tranhuucuong91.github.io/post/vagrant-cheatsheet/</link>
+          <pubDate>Sun, 12 Jun 2016 01:49:40 ICT</pubDate>
+          <author>Cuong Tran</author>
+          <guid>http://tranhuucuong91.github.io/post/vagrant-cheatsheet/</guid>
+          <description>
+
+&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt; &lt;a href=&#34;https://gist.github.com/wpscholar/a49594e2e2b918f4d0c4&#34;&gt;https://gist.github.com/wpscholar/a49594e2e2b918f4d0c4&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Typing &lt;code&gt;vagrant&lt;/code&gt; from the command line will display a list of all available commands.&lt;/p&gt;
+
+&lt;p&gt;Be sure that you are in the same directory as the Vagrantfile when running these commands!&lt;/p&gt;
+
+&lt;h1 id=&#34;common-vagrant-commands:645d5c8f9a98e94b8a928bb0739779a6&#34;&gt;Common Vagrant Commands&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;vagrant up&lt;/code&gt;          &amp;ndash; starts vagrant environment (also provisions only on the FIRST &lt;code&gt;vagrant up&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;vagrant status&lt;/code&gt;      &amp;ndash; outputs status of the vagrant machine&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;vagrant halt&lt;/code&gt;        &amp;ndash; stops the vagrant machine&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;vagrant reload&lt;/code&gt;      &amp;ndash; restarts vagrant machine, loads new Vagrantfile configuration&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;vagrant provision&lt;/code&gt;   &amp;ndash; forces reprovisioning of the vagrant machine&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;vagrant ssh&lt;/code&gt;         &amp;ndash; connects to machine via SSH&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;vagrant destroy&lt;/code&gt;     &amp;ndash; stops and deletes all traces of the vagrant machine&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;tips:645d5c8f9a98e94b8a928bb0739779a6&#34;&gt;Tips&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;vagrant -v&lt;/code&gt;                    &amp;ndash; Get the vagrant version&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;vagrant global-status&lt;/code&gt;         &amp;ndash; outputs status of all vagrant machines&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;vagrant global-status --prune&lt;/code&gt; &amp;ndash; same as above, but prunes invalid entries&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;vagrant suspend&lt;/code&gt;               &amp;ndash; Suspends a virtual machine (remembers state)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;vagrant resume&lt;/code&gt;                &amp;ndash; Resume a suspended machine (vagrant up works just fine for this as well)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;vagrant reload --provision&lt;/code&gt;    &amp;ndash; Restart the virtual machine and force provisioning&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;vagrant provision --debug&lt;/code&gt;     &amp;ndash; Use the debug flag to increase the verbosity of the output&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;vagrant push&lt;/code&gt;                  &amp;ndash; Yes, vagrant can be configured to &lt;a href=&#34;http://docs.vagrantup.com/v2/push/index.html&#34;&gt;deploy code&lt;/a&gt;!&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;vagrant up --provision | tee provision.log&lt;/code&gt;  &amp;ndash; Runs &lt;code&gt;vagrant up&lt;/code&gt;, forces provisioning and logs all output to a file&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;notes:645d5c8f9a98e94b8a928bb0739779a6&#34;&gt;Notes&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;If you are using &lt;a href=&#34;https://github.com/varying-vagrant-vagrants/vvv/&#34;&gt;VVV&lt;/a&gt;, you can enable xdebug by running &lt;code&gt;vagrant ssh&lt;/code&gt; and then &lt;code&gt;xdebug_on&lt;/code&gt; from the virtual machine&amp;rsquo;s CLI.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+      
     
       
         <item>
