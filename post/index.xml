@@ -6,8 +6,91 @@
     <language>en-us</language>
     <author>Cuong Tran</author>
     <rights>(C) 2016</rights>
-    <updated>2016-06-12 01:49:40 &#43;0700 ICT</updated>
+    <updated>2016-06-14 09:17:14 &#43;0700 ICT</updated>
 
+    
+      
+        <item>
+          <title>Getting started with Docker and PHP</title>
+          <link>http://tranhuucuong91.github.io/post/getting-started-docker-and-php/</link>
+          <pubDate>Tue, 14 Jun 2016 09:17:14 ICT</pubDate>
+          <author>Cuong Tran</author>
+          <guid>http://tranhuucuong91.github.io/post/getting-started-docker-and-php/</guid>
+          <description>
+
+&lt;p&gt;References: &lt;a href=&#34;http://www.newmediacampaigns.com/blog/docker-for-php-developers&#34;&gt;http://www.newmediacampaigns.com/blog/docker-for-php-developers&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;what-is-a-docker-container:3c549e4b0d832c70cfae9e6012022c7c&#34;&gt;What is a Docker Container?&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;A container is a single service in a larger application.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;For example, assume we are building a PHP application. We need:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Web Server (e.g, nginx)&lt;/li&gt;
+&lt;li&gt;Application Server (e.g, PHP-FPM)&lt;/li&gt;
+&lt;li&gt;Database Server (e.g, MySQL)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Our application has three distinct services.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Each of these services can be separated into its own Docker container.&lt;/li&gt;
+&lt;li&gt;Three containers are linked together.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We have a complete application.&lt;/p&gt;
+
+&lt;h1 id=&#34;what-is-a-docker-image:3c549e4b0d832c70cfae9e6012022c7c&#34;&gt;What is a Docker Image?&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Docker instance like a Object and Docker image like a Class.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Just like a single PHP class can be used to instantiate many unique PHP objects, so too can Docker images to used to instantiate many unique Docker containers.&lt;/p&gt;
+
+&lt;p&gt;For example, we can reuse a single PHP-FPM Docker image to instantiate many unique PHP-FPM containers for each of our applications.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;How to get Docker images?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Step 1&lt;/strong&gt;: Find and use Docker images on Docker Hubs &lt;a href=&#34;https://hub.docker.com/&#34;&gt;https://hub.docker.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Step 2&lt;/strong&gt;: Build custom Docker images (if need).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Why re-invent the wheel if someone has already built a Docker image that solves our problem?&lt;/p&gt;
+
+&lt;h1 id=&#34;let-s-build-an-application:3c549e4b0d832c70cfae9e6012022c7c&#34;&gt;Let&amp;rsquo;s Build an Application&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Training:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;How to build a Docker image.&lt;/li&gt;
+&lt;li&gt;How to run Docker containers.&lt;/li&gt;
+&lt;li&gt;How to persist data with Docker volumes.&lt;/li&gt;
+&lt;li&gt;How to aggregate container log output.&lt;/li&gt;
+&lt;li&gt;How to manage related containers with Docker Compose.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Game:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Install Docker.&lt;/li&gt;
+&lt;li&gt;Build Nginx Docker Image. (step-by-step)&lt;/li&gt;
+&lt;li&gt;Use PHP-FPM Docker Image.&lt;/li&gt;
+&lt;li&gt;Use MySQL Docker Image.&lt;/li&gt;
+&lt;li&gt;Application Setup.&lt;/li&gt;
+&lt;li&gt;Config Nginx.&lt;/li&gt;
+&lt;li&gt;Use Docker Compose.&lt;/li&gt;
+&lt;li&gt;Docker logs.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;(Cont.)&lt;/p&gt;
+</description>
+        </item>
+      
     
       
         <item>

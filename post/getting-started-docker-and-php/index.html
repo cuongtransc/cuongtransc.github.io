@@ -14,14 +14,14 @@
     <link rel="alternate" type="application/rss+xml" title="RSS" href="http://tranhuucuong91.github.io/index.xml">
 
     
-    <title>Stratovarius - Forever - The silence of winter</title>
-    <meta property='og:title' content="Stratovarius - Forever - The silence of winter">
+    <title>Getting started with Docker and PHP - The silence of winter</title>
+    <meta property='og:title' content="Getting started with Docker and PHP - The silence of winter">
     <meta property="og:type" content="article">
     
 
-    <meta property="og:url" content="http://tranhuucuong91.github.io/post/stratovarius-forever/">
+    <meta property="og:url" content="http://tranhuucuong91.github.io/post/getting-started-docker-and-php/">
     
-    
+    <meta property="og:image" content="http://tranhuucuong91.github.io/images/docker-nginx-php-mysql.jpg">
 
 
 <script type="application/ld+json">
@@ -32,15 +32,15 @@
       "@type":"WebPage",
       "@id":"http:\/\/tranhuucuong91.github.io\/"
     },
-    "headline": "Stratovarius - Forever |  ",
+    "headline": "Getting started with Docker and PHP |  ",
     "image": {
       "@type": "ImageObject",
       "url": "",
       "height": 700,
       "width": 700
     },
-    "datePublished": "2016-06-11T03:44:48JST",
-    "dateModified": "2016-06-11T03:44:48JST",
+    "datePublished": "2016-06-14T09:17:14JST",
+    "dateModified": "2016-06-14T09:17:14JST",
     "author": {
       "@type": "Person",
       "name": "",
@@ -77,25 +77,81 @@
     <div class="col-md-9">
 
       <article class="single">
-        <div class="image" style="background-image: url(http://tranhuucuong91.github.io/images/default.jpg);"></div>
+        <div class="image" style="background-image: url(http://tranhuucuong91.github.io/images/docker-nginx-php-mysql.jpg);"></div>
         <div class="body">
-          <h1>Stratovarius - Forever</h1>
-          <p>I stand alone in the darkness, <br/>
-the winter of my life came so fast. <br/>
-Memories go back to my childhood <br/>
-to days I still recall. <br/></p>
+          <h1>Getting started with Docker and PHP</h1>
+          
 
-<p>Oh how happy I was then, <br/>
-there was no sorrow there was no pain. <br/>
-Walking through the green fields, <br/>
-sunshine in my eyes. <br/></p>
+<p>References: <a href="http://www.newmediacampaigns.com/blog/docker-for-php-developers">http://www.newmediacampaigns.com/blog/docker-for-php-developers</a></p>
 
-<p>I&rsquo;m still there everywhere, <br/>
-I&rsquo;m the dust in the wind. <br/>
-I&rsquo;m the star in the northern sky. <br/>
-I never stayed anywhere, <br/>
-I&rsquo;m the wind in the trees. <br/>
-Would you wait for me forever? <br/></p>
+<h1 id="what-is-a-docker-container:3c549e4b0d832c70cfae9e6012022c7c">What is a Docker Container?</h1>
+
+<blockquote>
+<p>A container is a single service in a larger application.</p>
+</blockquote>
+
+<p>For example, assume we are building a PHP application. We need:</p>
+
+<ol>
+<li>Web Server (e.g, nginx)</li>
+<li>Application Server (e.g, PHP-FPM)</li>
+<li>Database Server (e.g, MySQL)</li>
+</ol>
+
+<p>Our application has three distinct services.</p>
+
+<ul>
+<li>Each of these services can be separated into its own Docker container.</li>
+<li>Three containers are linked together.</li>
+</ul>
+
+<p>We have a complete application.</p>
+
+<h1 id="what-is-a-docker-image:3c549e4b0d832c70cfae9e6012022c7c">What is a Docker Image?</h1>
+
+<blockquote>
+<p>Docker instance like a Object and Docker image like a Class.</p>
+</blockquote>
+
+<p>Just like a single PHP class can be used to instantiate many unique PHP objects, so too can Docker images to used to instantiate many unique Docker containers.</p>
+
+<p>For example, we can reuse a single PHP-FPM Docker image to instantiate many unique PHP-FPM containers for each of our applications.</p>
+
+<p><strong>How to get Docker images?</strong></p>
+
+<ul>
+<li><strong>Step 1</strong>: Find and use Docker images on Docker Hubs <a href="https://hub.docker.com/">https://hub.docker.com/</a></li>
+<li><strong>Step 2</strong>: Build custom Docker images (if need).</li>
+</ul>
+
+<p>Why re-invent the wheel if someone has already built a Docker image that solves our problem?</p>
+
+<h1 id="let-s-build-an-application:3c549e4b0d832c70cfae9e6012022c7c">Let&rsquo;s Build an Application</h1>
+
+<p><strong>Training:</strong></p>
+
+<ul>
+<li>How to build a Docker image.</li>
+<li>How to run Docker containers.</li>
+<li>How to persist data with Docker volumes.</li>
+<li>How to aggregate container log output.</li>
+<li>How to manage related containers with Docker Compose.</li>
+</ul>
+
+<p><strong>Game:</strong></p>
+
+<ol>
+<li>Install Docker.</li>
+<li>Build Nginx Docker Image. (step-by-step)</li>
+<li>Use PHP-FPM Docker Image.</li>
+<li>Use MySQL Docker Image.</li>
+<li>Application Setup.</li>
+<li>Config Nginx.</li>
+<li>Use Docker Compose.</li>
+<li>Docker logs.</li>
+</ol>
+
+<p>(Cont.)</p>
 
         </div>
 
@@ -103,10 +159,10 @@ Would you wait for me forever? <br/></p>
           <section>
             <div>
               <div class="p-share">
-                <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2ftranhuucuong91.github.io%2fpost%2fstratovarius-forever%2f&t=Stratovarius%20-%20Forever" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
-                <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2ftranhuucuong91.github.io%2fpost%2fstratovarius-forever%2f&text=Stratovarius%20-%20Forever&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
-                <a href="https://plus.google.com/share?url=http%3a%2f%2ftranhuucuong91.github.io%2fpost%2fstratovarius-forever%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
-                <a href="http://getpocket.com/edit?url=http%3a%2f%2ftranhuucuong91.github.io%2fpost%2fstratovarius-forever%2f&title=Stratovarius%20-%20Forever" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+                <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2ftranhuucuong91.github.io%2fpost%2fgetting-started-docker-and-php%2f&t=Getting%20started%20with%20Docker%20and%20PHP" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+                <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2ftranhuucuong91.github.io%2fpost%2fgetting-started-docker-and-php%2f&text=Getting%20started%20with%20Docker%20and%20PHP&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+                <a href="https://plus.google.com/share?url=http%3a%2f%2ftranhuucuong91.github.io%2fpost%2fgetting-started-docker-and-php%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+                <a href="http://getpocket.com/edit?url=http%3a%2f%2ftranhuucuong91.github.io%2fpost%2fgetting-started-docker-and-php%2f&title=Getting%20started%20with%20Docker%20and%20PHP" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
               </div>
             </div>
           </section>
@@ -141,7 +197,13 @@ Would you wait for me forever? <br/></p>
   
   <section>
     <header>Table Of Contents</header>
-    <div></div>
+    <div><nav id="TableOfContents">
+<ul>
+<li><a href="#what-is-a-docker-container:3c549e4b0d832c70cfae9e6012022c7c">What is a Docker Container?</a></li>
+<li><a href="#what-is-a-docker-image:3c549e4b0d832c70cfae9e6012022c7c">What is a Docker Image?</a></li>
+<li><a href="#let-s-build-an-application:3c549e4b0d832c70cfae9e6012022c7c">Let&rsquo;s Build an Application</a></li>
+</ul>
+</nav></div>
   </section>
   
 
